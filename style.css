@@ -1,0 +1,157 @@
+ ul {
+    height: 100px;
+    padding-top: 0 !important;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  font-family:'Comic Sans MS';
+}
+
+li {
+  float: left;
+  border-right:1px solid white;
+  font-size: 12px;
+}
+
+li:last-child {
+  border-right: none;
+}
+/*
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+*/
+
+li a:hover {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-weight: bold;//added
+}
+
+
+li a:hover:not(.active) {
+  color: #35488a;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+body {
+  background: url('./bg-image.webp');
+  margin: 0;
+}
+
+input {
+  border-width: 0 0 1px 0;
+  background: none;
+  outline: 0;
+  color: white;
+  font-size: 18px;
+  width: 50%;
+  border-bottom-color: #acacac;
+  margin: 20px 0;
+}
+
+.form_group {  
+  display: flex;
+  flex-direction: column;  
+} 
+
+label {
+  font-size: 20px;
+  color: white;
+}
+
+button {
+  width: 150px;
+  font-size: 16px;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 5px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.btn-container {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+}
+
+h2 {
+  text-align: left;
+  margin-left: 60px;
+  font-size: 40px;
+}
+
+.radio-container {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.radio-container label {
+    width: fit-content;padding-top: 12px;
+  }
+
+ .radio-container input {
+    width: 35px;
+    font-size: 15px;cursor: pointer;
+    margin: 0;
+  }
+
+  .select-container {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .select-container select {
+    min-width: 200px;
+    border: 0;
+    background-image: linear-gradient(#2680eb,#2680eb),linear-gradient(#d2d2d2,#d2d2d2);
+    background-size: 0 2px,100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom,50% calc(100% - 1px);
+    background-color: #7393B3;
+    transition: background 0s ease-out;
+    float: none;
+    box-shadow: none;
+    border-radius: 0;
+    color: white;
+    font-size: 15px;
+    margin-top: -5px;
+  }
+
+  .table-container td {
+    border-bottom: 1px solid grey;
+    padding: 10px;
+  }
+
+  .link {
+    background-color: white;
+    border-radius: 6px;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .bgcolor{
+    background-repeat: #4F6CA1
+  }
+  .card-body:hover {
+    color: #0000CD;
+    font-style: italic; 
+  }
